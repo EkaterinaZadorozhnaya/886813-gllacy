@@ -5,8 +5,91 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
+    
+    <header class="main-header">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="logo.svg" width="154" height="64" alt="Логотип «Gllacy Shop»"> 
+        </a>
+        <ul class="site-navigation">
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="delivery.html">Доставка и оплата</a> </li>
+          <li><a href="company.html">О компании</a> </li>
+        </ul>
+      </nav>
 
+      <div class="search">
+        <span class="visually-hidden">Поиск</span>
+      </div>
+
+      <ul class="user-navigation">
+        <li class="login-link">Вход</li>
+      </ul>
+
+      <div class="shopping-basket">Пусто</div>
+    </header>
+
+    <main class="container">
+      <h1 class="visually-hidden">Магазин мороженого «Gllacy</h1>
+      
+      <section class="features">
+        <h3 class="features-title">Магазин Глэйси&nbsp;&mdash; это онлайн- и&nbsp;офлайн-магазин по&nbsp;продаже мороженого собственного производства на&nbsp;разве </h3>
+        <ul class="features-list">
+          <li class="feature-item">
+            <p>Все наше мороженое изготавливается на&nbsp;собственном производстве, с&nbsp;использованием современного оборудования и&nbsp;проверенных временем технологий.</p>
+          </li>
+          <li class="feature-item">
+            <p>Для приготовления мороженого используются настоящие сливки и&nbsp;молоко высочайшего качества. Все дополнительные ингредиенты и&nbsp;добавки произведены из&nbsp;натурального, экологически чистого сырья.</p>
+          </li>
+          <li class="feature-item">
+            <p>Закупка ингредиентов производится только у&nbsp;проверенных фермерских хозяйств и&nbsp;компаний, с&nbsp;которыми нас связывает долговременное сотрудничество.</p>
+          </li>
+          <li class="feature-item">
+            <p>Доставка нашего мороженого до&nbsp;заказчиков осуществляется в&nbsp;специальном термопаке, который не&nbsp;дает мороженому растаять в&nbsp;пути и&nbsp;позволяет сохранить превосходный вкус.</p>
+          </li>
+        </ul>
+      </section>
+
+      <article class="blog">
+        <a href="index/blog.html"><h3 class="blog-title">10 способов сервировки фруктовых щербетов к столу</h3></a>
+        <span class="blog-item">Новое в нашем блоге</span>
+        <img src="img/ice-cream.png" alt="Мороженое">
+      </article>
+
+      <section class="mailing">
+        <h3 class="visually-hidden">Рассылка</h3>
+        <p>Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будете всегда в&nbsp;курсе всего самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой ненужной ерунды. Честно =)</p>
+        <button class="button">Отправить</button>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-social">
+        <h3 class="visually-hidden">Социальные сети</h3>
+        <ul>
+          <li> <a class="social-button" href="#">Твиттер</a></li>
+          <li> <a class="social-button" href="#">Инстаграм</a></li>
+          <li> <a class="social-button" href="#">Фейсбук</a></li>
+          <li> <a class="social-button" href="#">Вконтакте</a></li>
+        </ul>
+      </div>
+
+      <nav class="footer-navigation">
+        <h3 class="visually-hidden">Дополнительное меню</h3>
+        <ul class="footer-site-navigation">
+          <li><a href="#">Для поставщиков</a></li>
+          <li><a href="#">О производстве</a></li>
+          <li><a href="#">Наши документы</a></li>
+          <li><a href="#">Экологические стандарты</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-copyright">
+        <h3 class="visually-hidden">Разработано</h3>
+        <a href="https://htmlacademy.ru"> <img src="logo.svg" width="109" height="38" alt="Логотип HTML Academy"></a>
+        <p>Сделано в HTML Academy © 2017</p>
+      </div>
+    </footer>
   </body>
 </html>

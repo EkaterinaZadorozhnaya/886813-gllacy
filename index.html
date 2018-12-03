@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -35,18 +38,10 @@
 
       <ul class="user-navigation">
         <li>
-          <span class="visually-hidden">Поиск</span>
-          <section class="modal modal-search">
-            <h2 class="visually-hidden">Поисковая строка</h2>
-            <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
-              <p>
-                <label class="visually-hidden">
-                  <input id="search-field" type="text" name="search" value="" placeholder="Что ищем?">
-                  Что ищем?
-                </label>
-              </p>
-            </form>
-          </section>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
+            <label for="search">Поиск</label>
+            <input id="search" type="text" name="search" value="" placeholder="Что ищем?">
+          </form>
         </li>
 
         <li>
@@ -83,49 +78,57 @@
   </header>
 
   <main class="container">
-    <h1 class="visually-hidden">Магазин мороженого «Gllacy</h1>
-
-    <section class="features">
-      <b class="features-title">Магазин Глэйси&nbsp;&mdash; это онлайн- и&nbsp;офлайн-магазин по&nbsp;продаже
-        мороженого собственного производства на&nbsp;разве </b>
-      <ul class="features-list">
-        <li class="feature-item">
-          <p>Все наше мороженое изготавливается на&nbsp;собственном производстве, с&nbsp;использованием современного
-            оборудования и&nbsp;проверенных временем технологий.</p>
-        </li>
-        <li class="feature-item">
-          <p>Для приготовления мороженого используются настоящие сливки и&nbsp;молоко высочайшего качества. Все
-            дополнительные ингредиенты и&nbsp;добавки произведены из&nbsp;натурального, экологически чистого сырья.</p>
-        </li>
-        <li class="feature-item">
-          <p>Закупка ингредиентов производится только у&nbsp;проверенных фермерских хозяйств и&nbsp;компаний,
-            с&nbsp;которыми нас связывает долговременное сотрудничество.</p>
-        </li>
-        <li class="feature-item">
-          <p>Доставка нашего мороженого до&nbsp;заказчиков осуществляется в&nbsp;специальном термопаке, который
-            не&nbsp;дает мороженому растаять в&nbsp;пути и&nbsp;позволяет сохранить превосходный вкус.</p>
-        </li>
-      </ul>
-    </section>
+    <div class="index-columns">
+      <h1 class="visually-hidden">Магазин мороженого «Gllacy</h1>
+      <section class="features">
+        <b class="features-title">Магазин Глэйси&nbsp;&mdash; это онлайн- и&nbsp;офлайн-магазин по&nbsp;продаже
+          мороженого собственного производства на&nbsp;разве </b>
+        <ul class="features-list">
+          <li class="feature-item">
+            <p>Все наше мороженое изготавливается на&nbsp;собственном производстве, с&nbsp;использованием современного
+              оборудования и&nbsp;проверенных временем технологий.</p>
+          </li>
+          <li class="feature-item">
+            <p>Для приготовления мороженого используются настоящие сливки и&nbsp;молоко высочайшего качества. Все
+              дополнительные ингредиенты и&nbsp;добавки произведены из&nbsp;натурального, экологически чистого сырья.</p>
+          </li>
+          <li class="feature-item">
+            <p>Закупка ингредиентов производится только у&nbsp;проверенных фермерских хозяйств и&nbsp;компаний,
+              с&nbsp;которыми нас связывает долговременное сотрудничество.</p>
+          </li>
+          <li class="feature-item">
+            <p>Доставка нашего мороженого до&nbsp;заказчиков осуществляется в&nbsp;специальном термопаке, который
+              не&nbsp;дает мороженому растаять в&nbsp;пути и&nbsp;позволяет сохранить превосходный вкус.</p>
+          </li>
+        </ul>
+      </section>
+    </div>
 
     <article class="blog">
       <span class="blog-item">Новое в&nbsp;нашем блоге</span>
       <h2 class="blog-title"><a href="index/blog.html">10&nbsp;способов сервировки фруктовых щербетов к&nbsp;столу</a></h2>
-      <img src="img/bg_strawberry.jpg" alt="Клубничное мороженое">
     </article>
 
     <section class="mailing">
       <h2 class="visually-hidden">Рассылка</h2>
       <p>Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будете всегда в&nbsp;курсе всего самого вкусного, что
         у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой ненужной ерунды. Честно =)</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+        <p>
+          <label class="hidden-text">
+            <input class="login-mail" type="text" name="mail" value="" placeholder="Электронная почта">
+            Электронная почта
+          </label>
+        </p>
+      </form>
       <button class="button">Отправить</button>
     </section>
   </main>
 
-  <footer>
-    <section class="footer-social">
+  <footer class="main-footer">
+    <section>
       <h2 class="visually-hidden">Социальные сети</h2>
-      <ul>
+      <ul class="footer-social">
         <li><a class="social-button" href="#">Твиттер</a></li>
         <li><a class="social-button" href="#">Инстаграм</a></li>
         <li><a class="social-button" href="#">Фейсбук</a></li>
@@ -136,7 +139,7 @@
     <nav class="footer-navigation">
       <h2 class="visually-hidden">Дополнительное меню</h2>
       <ul class="footer-site-navigation">
-        <li><a href="#">Для поставщиков</a></li>
+        <li><a href="#"><b>Для поставщиков</b></a></li>
         <li><a href="#">О производстве</a></li>
         <li><a href="#">Наши документы</a></li>
         <li><a href="#">Экологические стандарты</a></li>

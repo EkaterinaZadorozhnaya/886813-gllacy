@@ -6,12 +6,11 @@ body {
   line-height: 22px;
   font-weight: 400;
   color: #000000;
-
-  background: #849D8F;
 }
 
 .inner-page{
   color: #ffffff;
+  background: #849D8F;
 }
 
 a {
@@ -43,10 +42,8 @@ a {
   box-shadow: 0 2px 2px 0 #942718;
 }
 
-.site-navigation,
-.catalog-navigation,
-.user-navigation {
-  list-style: none;
+.list-style{
+ list-style: none;
 }
 
 .catalog-navigation{
@@ -57,35 +54,34 @@ a {
   line-height: 18px;
   color: #ffffff;
   font-weight: 700;
-  text-decoration: underline;
-  
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /*.catalog-navigation a{
-  text-decoration: none;
   font-weight: 400;
   color: #000000;
 }*/
 
 .site-navigation a:hover{
   background: #F7F6F3;
-  text-decoration: none;
   color: #323232;
 }
 
 .site-navigation a:focus{
   background: #EDEDED;
   box-shadow: 0 2px 1px 0 #696969;
-  text-decoration: none;
   color: #323232;
 }
 
 .site-navigation a:active,
-.site-navigation-current{
+.site-navigation-current a{
   background: #D07058;
-  text-decoration: none;
-  color: #ffffff;
 }
+
+.site-navigation-current a{
+  border-bottom-style: none;
+}
+
 
 /*.catalog-navigation a:hover{
   background: #FBDED7;
@@ -112,17 +108,14 @@ a {
 }
 
 .search-form label:hover,
-.search-form label:focus,
-.search-form label:active{
+.search-form label:focus{
   background:#F8F7F4;
 }
 
 .login-link:hover,
 .login-link:focus,
-.login-link:active,
 .shopping-basket:hover,
-.shopping-basket:focus,
-.shopping-basket:active{
+.shopping-basket:focus{
   color: #000000;
   background: #F8F7F4;
 }
@@ -142,15 +135,11 @@ a {
   font-weight: 700;
 }
 
-.breadcrumbs{
-  list-style: none;
-}
-
 .breadcrumbs a{
   font-size: 14px;
   line-height: 16px;
-  text-decoration: underline;
   color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .breadcrumbs a:hover,
@@ -163,15 +152,11 @@ a {
   line-height: 16px;
 }
 
-.index-columns-ice-cream ul{
-  list-style: none;
-}
-
 .catalog-item a{
   color: #ffffff;
   font-weight: 500;
   text-align: center;
-  text-decoration: underline;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .catalog-item a:hover,
@@ -200,16 +185,11 @@ a {
   font-weight: 500;
 }
 
-.features-list{
-  list-style: none;
-}
-
 .blog{
   background: #ffffff url("../img/bg_strawberry.jpg") no-repeat;
 }
 
 .blog-item{
-  font-size: 16px;
   font-weight: 500;
 }
 
@@ -229,19 +209,20 @@ a {
   color: #ffffff;
 }
 
-.footer-social,
-.footer-site-navigation{
-  list-style: none;
-}
-
 .footer-site-navigation a{
   color: #ffffff;
-  text-decoration: underline;
   font-size: 13px;
   line-height: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.footer-copyright a{
+.footer-copyright{
 color: #ffffff;
-text-decoration: underline;
+font-size: 12px;
+line-height: 16px;
+}
+
+.footer-copyright-text a{
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }

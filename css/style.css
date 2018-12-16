@@ -155,6 +155,7 @@ a {
 .catalog-item a {
   color: #ffffff;
   font-weight: 500;
+  font-size: 16px;
   text-align: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -175,7 +176,7 @@ a {
   font-size: 30px;
 }
 
-.index-columns {
+.advantages {
   background: #F4E8CE url("../img/bg_pattern.jpg") repeat;
 }
 
@@ -234,4 +235,115 @@ a {
 .footer-copyright-text a:hover,
 .footer-copyright-text a:focus {
   color: #FFBC9E;
+}
+
+/* ----- Сеточные стили ----- */
+
+.container {
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0 27px;
+}
+
+.main-header {
+  margin-bottom: 10px;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.main-header-logo {
+  width: 154px;
+  height: 64px;
+
+  padding-top: 10px;
+  padding-right: 23px;
+}
+
+.site-navigation {
+  width: 380px;
+  margin: 0;
+  padding: 0;
+}
+
+.user-navigation {
+  margin: 0;
+  padding: 0;
+
+  margin-left: auto;
+}
+
+.features {
+  padding: 21px 25px;
+  margin-bottom: 40px;
+}
+
+.features-list {
+  padding: 0;
+  margin: 0;
+}
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.blog {
+  width: 552px;
+  padding: 21px 25px;
+}
+
+.mailing {
+  width: 552px;
+  padding: 21px 25px;
+}
+
+.breadcrumbs {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.catalog-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.product-item {
+  width: 267px;
+  margin-right: 25px;
+  margin-bottom: 35px;
+}
+
+.product-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.main-footer {
+  padding: 18px 0 25px 0;
+}
+
+.main-footer .container {
+  display: flex;
+}
+
+.footer-social {
+  width: 188px;
+}
+
+.footer-navigation {
+  width: 355px;
+  margin-left: 214px;
+}
+
+.footer-copyright {
+  width: 219px;
+  margin-left: auto;
 }

@@ -131,6 +131,8 @@ a {
 }
 
 .user-navigation {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -189,11 +191,11 @@ a {
   border-bottom: none;
 }
 
- .catalog-navigation {
+.catalog-navigation {
   display: none;
-} 
+}
 
- /*.catalog-navigation {
+.catalog-navigation {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -221,7 +223,7 @@ a {
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
-} */
+} 
 
 .search-icon {
   display: flex;
@@ -243,10 +245,45 @@ a {
   fill: #323232;
 }
 
-/* .search-form label:hover,
-.search-form label:focus {
-  background: url(../img/search-black.svg) 0 0 no-repeat, #F8F7F4;
-} */
+
+
+.modal {
+  background: #F8F7F4;
+  border-radius: 6px;
+  padding: 20px 15px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.search-form {
+  position: absolute;
+  right: 215px;
+
+  margin: 0;
+  margin-top: 5px;
+
+  width: 314px;
+}
+
+.search-form  {
+  background: #ffffff;
+  border: 1px solid #D3D3D2;
+  border-radius: 6px;
+
+  margin: 0;
+  padding: 10px;
+}
+
+.search-form input::placeholder {
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+
+
+
+
 
 .login-link {
   background: rgba(255, 255, 255, 0.2);
@@ -282,6 +319,49 @@ a {
   color: #000000;
   background: #F8F7F4;
 }
+
+
+
+.modal-login {
+  position: absolute;
+
+
+  width: 280px;
+
+  margin: 0;
+  margin-top: 5px;
+}
+
+/* .login-form {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+/* 
+.login-mail,
+.login-password {
+  background: #ffffff;
+  border: 1px solid #D3D3D2;
+  border-radius: 6px;
+
+  margin: 0;
+  padding: 10px;
+
+  min-width: 220px;
+}
+
+.login-mail::placeholder,
+.login-password::placeholder {
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+} */
+
+
+
+
+
 
 .shopping-basket {
   background: rgba(255, 255, 255, 0.2);
@@ -331,9 +411,10 @@ a {
   background: url(../img/basket-red.svg) 0 0 no-repeat;
 }
 
+/* 
 .modal {
   display: none;
-}
+} */
 
 .slider {
   position: relative;

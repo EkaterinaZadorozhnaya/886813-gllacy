@@ -65,7 +65,7 @@
               </svg>
             </div>
             <form class="search-form modal" action="https://echo.htmlacademy.ru" method="GET">
-              <label for="search">Поиск</label>
+              <label for="search"><span class="visually-hidden">Поиск</span></label>
               <input id="search" type="text" name="search" value="" placeholder="Что ищем?">
             </form>
           </li>
@@ -75,19 +75,15 @@
             <section class="modal modal-login">
               <h2 class="visually-hidden">Личный кабинет</h2>
               <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
-                <p>
-                  <label class="hidden-text">
-                    <input class="login-mail" type="text" name="mail" value="" placeholder="Электронная почта">
-                    Электронная почта
-                  </label>
-                </p>
+                <label class="hidden-text">
+                  <input class="login-mail" type="text" name="mail" value="" placeholder="Электронная почта">
+                  <span class="visually-hidden">Электронная почта</span>
+                </label>
 
-                <p>
-                  <label class="hidden-text">
-                    <input class="login-password" type="password" name="password" value="" placeholder="Пароль">
-                    Пароль
-                  </label>
-                </p>
+                <label class="hidden-text">
+                  <input class="login-password" type="password" name="password" value="" placeholder="Пароль">
+                  <span class="visually-hidden">Пароль</span>
+                </label>
 
                 <div>
                   <button class="button" type="submit">Войти</button>
